@@ -96,8 +96,8 @@ function App() {
       photo: ing,
       title: "Systems Engineering in the Fourth Industrial Revolution",
       description: "Libro de Ingeniería",
+      price: 1200,
       stock: 15,
-      price: 1200
     },
     {
       id: uuid(),
@@ -105,8 +105,8 @@ function App() {
       photo: ing2,
       title: "INGENIERIA DE SISTEMAS: INGENIERIA, ECONOMIA E INVESTIGACION DE OPERACIONES",
       description: "Libro de Ingeniería",
+      price: 1200,
       stock: 10,
-      price: 1200
     },
     {
       id: uuid(),
@@ -114,8 +114,8 @@ function App() {
       photo: bio1,
       title: "Biología",
       description: "Libro de biología",
+      price: 1200,
       stock: 20,
-      price: 1200
     },
     {
       id: uuid(),
@@ -123,8 +123,8 @@ function App() {
       photo: bio2,
       title: "El libro de la biología (The Biology Book)",
       description: "Libro de biología",
+      price: 1200,
       stock: 11,
-      price: 1200
     },
     {
       id: uuid(),
@@ -132,8 +132,8 @@ function App() {
       photo: mat1,
       title: "El Libro de Las Matemáticas",
       description: "Libro de matemáticas",
+      price: 1200,
       stock: 25,
-      price: 1200
     },
     {
       id: uuid(),
@@ -141,8 +141,8 @@ function App() {
       photo: mat2,
       title: "Geometría, Trigonometría y Geometría Analítica",
       description: "Libro de matemáticas",
+      price: 1200,
       stock: 30,
-      price: 1200
     },
     {
       id: uuid(),
@@ -150,8 +150,8 @@ function App() {
       photo: cien1,
       title: "Sociología",
       description: "Libro de sociología",
+      price: 1200,
       stock: 35,
-      price: 1200
     },
     {
       id: uuid(),
@@ -159,8 +159,8 @@ function App() {
       photo: cien2,
       title: "Introducción a las Ciencas Sociales",
       description: "Libro de sociología",
+      price: 1200,
       stock: 17,
-      price: 1200
     },
     {
       id: uuid(),
@@ -168,8 +168,8 @@ function App() {
       photo: filo1,
       title: "Metafísica",
       description: "Libro de filosofía",
+      price: 1200,
       stock: 12,
-      price: 1200
     },
     {
       id: uuid(),
@@ -177,8 +177,8 @@ function App() {
       photo: filo2,
       title: "FILOSOFÍA DE LA IDEA COSMONÓMICA PARA PRINCIPIANTES",
       description: "Libro de filosofía",
+      price: 1200,
       stock: 12,
-      price: 1200
     },
   ]);
 

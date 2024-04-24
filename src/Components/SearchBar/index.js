@@ -82,7 +82,7 @@ function SearchBar({onSearch}) {
             <Logo src={logo} />
             <Search 
                 type="text"
-                placeholder="¿Qué leerás hoy?"
+                placeholder="Buscar libro"
                 value={searchTerm}
                 onChange={handleInputChange}
             />

@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Container = styled(Contenedor)`
     margin-top: 0px;
     align-items: start;
+
 `
 
 const CerrarSesion = styled(Btn)`
@@ -98,10 +99,26 @@ const DivBtn = styled.div`
         margin-top: 30px;
     }
 `
+const Titulo = styled.h1`
+    width: 100%;
+    color: ${colorPrimario};
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    border-color: ${colorPrimario};
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    margin: 10px 20px;
+
+    @media (min-width:900px)
+    {
+        text-align: start;
+        font-size: 40px;
+    }
+`
 
 const InfoDiv = styled.div`
-    position: absolute;
-    top:calc(100vh - 10vh);    
+   
     left: 0;
     box-sizing: border-box;
     width: auto;
@@ -186,8 +203,7 @@ const Account = (props) => {
 
     return(
         <Container>
-            <DivFoto style={{ backgroundImage: `url(${font})` }} />
-
+           <Titulo>Información de la cuenta</Titulo>
             <InfoDiv>
                 <div>
                     <InputFoto style={{ backgroundImage: `url(${photo})` }}></InputFoto>

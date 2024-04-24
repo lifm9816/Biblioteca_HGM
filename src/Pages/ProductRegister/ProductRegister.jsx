@@ -34,7 +34,7 @@ const DivFoto = styled.div`
 `
 
 const PortadaProducto = styled.label`
-    border: 10px dashed #737373;
+    border: 10px solid #737373;
     display: inline-block;
     height: 200px;
     width: 170px;
@@ -361,6 +361,26 @@ const ProductRegister = ({ brands, products, updateProducts, isLoggedIn, userRol
                     />
                     {errorStock.stock.error && (
                         <ErrorMessage> {errorStock.stock.message} </ErrorMessage>
+                    )}
+                </Div>
+                
+                <Div>
+                    <Etiqueta htmlFor="price" >Precio: </Etiqueta>
+                    <CampoTexto 
+                        id = "price"
+                        type = "text"
+                        error = {errorPrice && errorPrice.price && errorPrice.price.error}
+                        value={`$ ${price.toFixed(2)}`}//Se formatea price como string con para que incluya el signo de $ y los 0's indicados
+                        onChange={ (e) => {
+                            formatPrice(e);
+                        }}
+                        onBlur = { (e) => {
+                            setErrorPrice(validatePrice(formatPrice(e)));
+                        }}
+                        required
+                    />
+                    {errorPrice.price.error && (
+                        <ErrorMessage> {errorPrice.price.message} </ErrorMessage>
                     )}
                 </Div>
 

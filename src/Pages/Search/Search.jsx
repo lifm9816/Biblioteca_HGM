@@ -73,57 +73,7 @@ const Search = (props) => {
                 ) : null}
             </ResultsDiv>
         </div>
-    )//*/
-
-    /*Resultados al hacer click en el boton
-    return (
-        <div>
-          <SearchBar onSearch={handleSearch} />
-          <ResultsDiv>
-            {searchTerm && filteredProducts.length === 0 ? (
-              <p>No se encontraron resultados</p>
-            ) : searchTerm ? (
-              filteredProducts.map((product, index) => (
-                <SearchCard
-                  data={product}
-                  key={index}
-                  marcas={marcas}
-                />
-              ))
-            ) : null}
-          </ResultsDiv>
-        </div>
-      );*/
-
-      /*
-      return (
-        <div>
-            <SearchBar onSearch={handleSearch} />
-            <ResultsDiv>
-                {searchTerm && filteredProducts.length === 0 ? (
-                    <p>No se encontraron resultados</p>
-                ) : (
-                    <TransitionGroup component={Div}>
-                        {filteredProducts.map((product, index) => (
-                            <CSSTransition
-                                key={index}
-                                timeout={500}
-                                classNames="fade"
-                            >
-                                <FadeDiv className="fade-enter-active">
-                                    <SearchCard
-                                        key={index}
-                                        data={product}
-                                        marcas={marcas}
-                                    />
-                                </FadeDiv>
-                            </CSSTransition>
-                        ))}
-                    </TransitionGroup>
-                )}
-            </ResultsDiv>
-        </div>
-    );*/
+    )
 }
 
 export default Search
